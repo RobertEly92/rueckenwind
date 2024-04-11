@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rueckenwind/presentation/mainPage/menu_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,49 +33,11 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(30.0),
-                child: Image.asset(
-                  'assets/logo-rw-final.png',
-                  fit: BoxFit.contain,
-                  height: 125.0,
-                ),
-              ),
-              const SizedBox(width: 150,),
-              const Padding(
-                padding: EdgeInsets.all(30.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Text('1link'),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('2link'),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('3link'),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text('4link'),
-                  ],
-                ),
-              )
-            ],
-          ),
-          const Center(child: Text('Infotext'))
-        ],
+        key: Key('mainPageColumn'),
+        children: [MenuWidget(), Center(child: Text('Infotext'))],
       ),
     );
   }
 }
-
