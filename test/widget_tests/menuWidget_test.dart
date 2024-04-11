@@ -10,7 +10,7 @@ testWidgets('Test ob alle Menüpunkte sichtbar sind', (WidgetTester tester) asyn
   
   await tester.pumpWidget(const MenuWidget());
 
-  const imagePath = 'assets/logo-runterSkaliert';
+  const imagePath = 'assets/logo-runterSkaliert.png';
 
   //finders
   final firstMenuPoint = find.text('WER SIND WIR?');
