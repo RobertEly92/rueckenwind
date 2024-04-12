@@ -25,19 +25,39 @@ class MyApp extends StatelessWidget {
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
+  
 
   @override
   State<MainPage> createState() => _MainPageState();
 }
 
 class _MainPageState extends State<MainPage> {
+  final Widget _mainView = WerSindWirPage();
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
-        key: Key('mainPageColumn'),
-        children: [MenuWidget(), Center(child: Text('Infotext'))],
+        key: const Key('mainPageColumn'),
+        children: [const MenuWidget(), 
+        _mainView,
+        const Center(child: Text('Infotext'))],
       ),
     );
+  }
+}
+
+
+class WerSindWirPage extends StatefulWidget {
+  WerSindWirPage({Key? key}) : super(key: key);
+
+  @override
+  State<WerSindWirPage> createState() => _WerSindWirPageState();
+}
+
+class _WerSindWirPageState extends State<WerSindWirPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
