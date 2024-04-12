@@ -1,11 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:rueckenwind/main.dart';
+import 'package:rueckenwind/presentation/mainPage/werSindWirPage.dart';
 
 void main(){
 
   testWidgets('test ob der auf der WerSindWirPage korrekt ist ', (WidgetTester tester) async {
 
-    await tester.pumpWidget(WerSindWirPage());
+    await tester.pumpWidget(const WerSindWirPage());
 
     //finders
     final mitarbeiterList = ['Silke Kappler', 'Michael Völker', 'Frank Riedel'];

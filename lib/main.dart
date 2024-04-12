@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rueckenwind/presentation/mainPage/menu_widget.dart';
+import 'package:rueckenwind/presentation/mainPage/werSindWirPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +33,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final Widget _mainView = WerSindWirPage();
+  final Widget _mainView = const WerSindWirPage();
 
   @override
   Widget build(BuildContext context) {
@@ -40,24 +41,9 @@ class _MainPageState extends State<MainPage> {
       body: Column(
         key: const Key('mainPageColumn'),
         children: [const MenuWidget(), 
-        _mainView,
-        const Center(child: Text('Infotext'))],
+        _mainView,],
       ),
     );
   }
 }
 
-
-class WerSindWirPage extends StatefulWidget {
-  WerSindWirPage({Key? key}) : super(key: key);
-
-  @override
-  State<WerSindWirPage> createState() => _WerSindWirPageState();
-}
-
-class _WerSindWirPageState extends State<WerSindWirPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
