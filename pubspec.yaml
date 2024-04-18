@@ -14,6 +14,8 @@ dependencies:
 
   
   cupertino_icons: ^1.0.2
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
@@ -29,6 +31,11 @@ flutter:
   assets:
     - assets/logo-rw-final.png
     - assets/logo-runterSkaliert.png
+    - assets/SilkeKappler.png
+    - assets/MichaelVölker.png
+    - assets/FrankRiedel.png
+    - assets/StephanieHeise.png
+    - assets/MadlenJähn.png
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
