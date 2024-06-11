@@ -16,7 +16,7 @@ class WerSindWirPage extends StatelessWidget {
             const Text(
               'Wer sind wir?',
               style: TextStyle(
-                  color: const Color.fromRGBO(44, 97, 172, 1),
+                  color: Color.fromRGBO(44, 97, 172, 1),
                   //TODO aufs MainScheme zugreifen
                   fontWeight: FontWeight.bold,
                   fontSize: 35.0),
